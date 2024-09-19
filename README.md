@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Runs the app in the using mode.\
+Deploy the app for the using mode.\
 Open [https://ylecalvez.github.io/bretz_rating/](https://ylecalvez.github.io/bretz_rating/) to view it in your browser.
 
 ### `npm test`

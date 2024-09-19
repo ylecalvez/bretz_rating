@@ -9,6 +9,20 @@ const App = () => {
     { src: '/bretz_rating/imgs/sel_vinaigre.png', alt: 'Sel et Vinaigre', id: 'sel_vinaigre', rating: 0 },
     { src: '/bretz_rating/imgs/fromage_du_jura.png', alt: 'Fromage du Jura', id: 'fromage_du_jura', rating: 0 },
     { src: '/bretz_rating/imgs/cheddar_jalapenos.png', alt: 'Cheddar Jalapenos', id: 'cheddar_jalapenos', rating: 0 },
+    { src: '/bretz_rating/imgs/confit_oignon.png', alt: 'Confit d\'oignon', id: 'confit_oignon', rating: 0 },
+    { src: '/bretz_rating/imgs/cheddar_oignon.png', alt: 'Cheddar Oignon de Roscoff', id: 'cheddar_oignon', rating: 0 },
+    { src: '/bretz_rating/imgs/bleu_pancetta.png', alt: 'Bleu Pancetta', id: 'bleu_pancetta', rating: 0 },
+    { src: '/bretz_rating/imgs/poulet_braise.png', alt: 'Poulet braisé', id: 'poulet_braise', rating: 0 },
+    { src: '/bretz_rating/imgs/fromage_frais.png', alt: 'Fromage Frais', id: 'fromage_frais', rating: 0 },
+    { src: '/bretz_rating/imgs/sauce_pomme_frite.png', alt: 'Sauce Pomme Frite', id: 'sauce_pomme_frite', rating: 0 },
+    { src: '/bretz_rating/imgs/yakitori.png', alt: 'Yakitori', id: 'yakitori', rating: 0 },
+    { src: '/bretz_rating/imgs/tomate_sechee.png', alt: 'Tomates séchées', id: 'tomate_sechee', rating: 0 },
+    { src: '/bretz_rating/imgs/chili.png', alt: 'Chili', id: 'chili', rating: 0 },
+    { src: '/bretz_rating/imgs/mozza_pesto.png', alt: 'Mozza Pesto', id: 'mozza_pesto', rating: 0 },
+    { src: '/bretz_rating/imgs/camembert.png', alt: 'Camembert', id: 'camembert', rating: 0 },
+    { src: '/bretz_rating/imgs/pastis.png', alt: 'Pastis', id: 'pastis', rating: 0 },
+    { src: '/bretz_rating/imgs/tartiflette.png', alt: 'Tartiflette', id: 'tartiflette', rating: 0 },
+    { src: '/bretz_rating/imgs/miel_moutarde.png', alt: 'Miel Moutarde', id: 'miel_moutarde', rating: 0 },
   ]);
 
   // Met à jour les notes depuis localStorage et trie les images
