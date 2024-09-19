@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ImageRating.css'; // Assure-toi d'utiliser le bon fichier CSS pour appliquer le style
+import './ImageRating.css'; 
 
 const ImageRating = ({ imageSrc, altText, imageId, rating, onRatingChange }) => {
   const [currentRating, setCurrentRating] = useState(rating);

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ImageRating from './components/ImageRating';
 
+// Base de donnée contenant les images et leurs notes
 const App = () => {
   const [images, setImages] = useState([
     { src: '/bretz_rating/imgs/chevre_piment.jpg', alt: 'Chèvre Piment d\'Espelette', id: 'chevre_piment', rating: 0 },
@@ -10,6 +11,7 @@ const App = () => {
     { src: '/bretz_rating/imgs/cheddar_jalapenos.jpg', alt: 'Cheddar Jalapenos', id: 'cheddar_jalapenos', rating: 0 },
   ]);
 
+  // Met à jour les notes depuis localStorage et trie les images
   useEffect(() => {
     const updatedImages = images.map((image) => {
       const savedRating = localStorage.getItem(`rating-${image.id}`);
@@ -18,16 +20,18 @@ const App = () => {
         rating: savedRating ? parseFloat(savedRating) : 0,
       };
     });
-
+    // Trie les images par ordre décroissant de la note
     const sortedImages = updatedImages.sort((a, b) => b.rating - a.rating);
     setImages(sortedImages);
   }, []);
 
+  // Met à jour la position si il y a changement de note
   const handleRatingChange = (id, newRating) => {
     const updatedImages = images.map((image) =>
       image.id === id ? { ...image, rating: newRating } : image
     );
 
+    // Trie les images après chaque changement de note
     const sortedImages = updatedImages.sort((a, b) => b.rating - a.rating);
     setImages(sortedImages);
   };
