@@ -5,10 +5,10 @@ import ImageRating from './components/ImageRating';
 // Base de donnée contenant les images et leurs notes
 const App = () => {
   const [images, setImages] = useState([
-    { src: '/bretz_rating/imgs/chevre_piment.jpg', alt: 'Chèvre Piment d\'Espelette', id: 'chevre_piment', rating: 0 },
-    { src: '/bretz_rating/imgs/sel_vinaigre.jpg', alt: 'Sel et Vinaigre', id: 'sel_vinaigre', rating: 0 },
-    { src: '/bretz_rating/imgs/fromage_du_jura.jpg', alt: 'Fromage du Jura', id: 'fromage_du_jura', rating: 0 },
-    { src: '/bretz_rating/imgs/cheddar_jalapenos.jpg', alt: 'Cheddar Jalapenos', id: 'cheddar_jalapenos', rating: 0 },
+    { src: '/bretz_rating/imgs/chevre_piment.png', alt: 'Chèvre Piment d\'Espelette', id: 'chevre_piment', rating: 0 },
+    { src: '/bretz_rating/imgs/sel_vinaigre.png', alt: 'Sel et Vinaigre', id: 'sel_vinaigre', rating: 0 },
+    { src: '/bretz_rating/imgs/fromage_du_jura.png', alt: 'Fromage du Jura', id: 'fromage_du_jura', rating: 0 },
+    { src: '/bretz_rating/imgs/cheddar_jalapenos.png', alt: 'Cheddar Jalapenos', id: 'cheddar_jalapenos', rating: 0 },
   ]);
 
   // Met à jour les notes depuis localStorage et trie les images
