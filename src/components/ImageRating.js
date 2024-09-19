@@ -1,38 +1,40 @@
-// src/components/ImageRating.js
 import React, { useState, useEffect } from 'react';
-import './ImageRating.css';
+import './ImageRating.css'; // Assure-toi d'utiliser le bon fichier CSS pour appliquer le style
 
-const ImageRating = ({ imageSrc, altText, imageId }) => {
-  const [rating, setRating] = useState(0);
+const ImageRating = ({ imageSrc, altText, imageId, rating, onRatingChange }) => {
+  const [currentRating, setCurrentRating] = useState(rating);
 
   useEffect(() => {
-    // Charger la note sauvegardée depuis le localStorage
     const savedRating = localStorage.getItem(`rating-${imageId}`);
     if (savedRating) {
-      setRating(parseFloat(savedRating));
+      setCurrentRating(parseFloat(savedRating));
     }
   }, [imageId]);
 
   const handleRatingChange = (e) => {
     const newRating = parseFloat(e.target.value);
-    setRating(newRating);
-    // Sauvegarder la note dans le localStorage
+    setCurrentRating(newRating);
     localStorage.setItem(`rating-${imageId}`, newRating);
+    onRatingChange(imageId, newRating);
   };
 
   return (
     <div className="image-rating">
-      <img src={process.env.PUBLIC_URL + imageSrc} alt={altText} className="image" />
+      <img src={imageSrc} alt={altText} className="image" />
       <div className="rating">
         <label>Note :</label>
-        <input
-          type="number"
-          min="0"
-          max="10"
-          step="0.1"
-          value={rating}
-          onChange={handleRatingChange}
-        />
+        <div className="input-wrapper">
+          <input
+            type="number"
+            min="0"
+            max="10"
+            step="0.1"
+            value={currentRating}
+            onChange={handleRatingChange}
+            className="rating-input"
+          />
+          <span>/10</span>
+        </div>
       </div>
     </div>
   );

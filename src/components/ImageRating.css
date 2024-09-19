@@ -1,23 +1,26 @@
-/* src/components/ImageRating.css */
 .image-rating {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .image {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  .rating {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .rating input {
-    width: 50px;
-    text-align: center;
-  }
-  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rating-input {
+  width: 60px; /* Taille de l'entrée de note */
+  margin-right: 5px; /* Espace entre l'entrée et le texte /10 */
+}
