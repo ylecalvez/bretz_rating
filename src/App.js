@@ -23,6 +23,19 @@ const App = () => {
     { src: '/bretz_rating/imgs/pastis.png', alt: 'Pastis', id: 'pastis', rating: 0 },
     { src: '/bretz_rating/imgs/tartiflette.png', alt: 'Tartiflette', id: 'tartiflette', rating: 0 },
     { src: '/bretz_rating/imgs/miel_moutarde.png', alt: 'Miel Moutarde', id: 'miel_moutarde', rating: 0 },
+    { src: '/bretz_rating/imgs/aioli.png', alt: 'Aioli', id: 'aioli', rating: 0 },
+    { src: '/bretz_rating/imgs/bretonne.png', alt: 'Bretonne', id: 'bretonne', rating: 0 },
+    { src: '/bretz_rating/imgs/barbecue.png', alt: 'Sauce Barbecue', id: 'barbecue', rating: 0 },
+    { src: '/bretz_rating/imgs/poivron_chorizo.png', alt: 'Poivrons Grillés Chorizo', id: 'poivron_chorizo', rating: 0 },
+    { src: '/bretz_rating/imgs/original.png', alt: 'Original', id: 'original', rating: 0 },
+    { src: '/bretz_rating/imgs/bleu.png', alt: 'Bleu d\'Auvergne AOP', id: 'bleu', rating: 0 },
+    { src: '/bretz_rating/imgs/pizza.png', alt: 'Pizza Feu de Bois', id: 'pizza', rating: 0 },
+    { src: '/bretz_rating/imgs/petit_oignon.png', alt: 'Petit Oignon', id: 'petit_oignon', rating: 0 },
+    { src: '/bretz_rating/imgs/pili_pili.png', alt: 'Pili Pili', id: 'pili_pili', rating: 0 },
+    { src: '/bretz_rating/imgs/paysanne.png', alt: 'Paysanne', id: 'paysanne', rating: 0 },
+    { src: '/bretz_rating/imgs/bacon_grillé.png', alt: 'Bacon Grillé', id: 'bacon_grillé', rating: 0 },
+    { src: '/bretz_rating/imgs/curry.png', alt: 'Sauce Curry', id: 'curry', rating: 0 },
+    { src: '/bretz_rating/imgs/cèpes.png', alt: 'Cèpes', id: 'cèpes', rating: 0 },
   ]);
 
   // Met à jour les notes depuis localStorage et trie les images
