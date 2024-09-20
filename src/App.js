@@ -36,6 +36,15 @@ const App = () => {
     { src: '/bretz_rating/imgs/bacon_grillé.png', alt: 'Bacon Grillé', id: 'bacon_grillé', rating: 0 },
     { src: '/bretz_rating/imgs/curry.png', alt: 'Sauce Curry', id: 'curry', rating: 0 },
     { src: '/bretz_rating/imgs/cèpes.png', alt: 'Cèpes', id: 'cèpes', rating: 0 },
+    { src: '/bretz_rating/imgs/craquante.png', alt: 'Craquante', id: 'craquante', rating: 0 },
+    { src: '/bretz_rating/imgs/sarrasin_curry.png', alt: 'Sarrasin Curry Crème', id: 'sarrasin_curry', rating: 0 },
+    { src: '/bretz_rating/imgs/sarrasin_sel.png', alt: 'Sarrasin Sel', id: 'sarrasin_sel', rating: 0 },
+    { src: '/bretz_rating/imgs/sarrasin_forestiere.png', alt: 'Sarrasin Forestière', id: 'sarrasin_forestiere', rating: 0 },
+    { src: '/bretz_rating/imgs/chili_menthe.png', alt: 'Chili Pointe de Menthe', id: 'chili_menthe', rating: 0 },
+    { src: '/bretz_rating/imgs/cote_de_boeuf.png', alt: 'Cote de Boeuf', id: 'cote_de_boeuf', rating: 0 },
+    { src: '/bretz_rating/imgs/ancienne.png', alt: 'Ancienne', id: 'ancienne', rating: 0 },
+    { src: '/bretz_rating/imgs/legume.png', alt: 'Légume', id: 'legume', rating: 0 },
+    { src: '/bretz_rating/imgs/bio.png', alt: 'Bio', id: 'bio', rating: 0 },
   ]);
 
   // Met à jour les notes depuis localStorage et trie les images
